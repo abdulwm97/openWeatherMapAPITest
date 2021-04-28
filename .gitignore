@@ -13,5 +13,6 @@ buildNumber.properties
 # Intellijout/
 .idea/
 .idea_modules/
+/target
 *.iml*.ipr*.iws
-src/test/resources/application.properties
+/src/test/resources/application.properties
