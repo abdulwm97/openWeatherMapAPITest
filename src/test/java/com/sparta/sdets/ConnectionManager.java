@@ -10,7 +10,7 @@ import java.net.http.HttpClient;
 import java.util.Properties;
 
 public class ConnectionManager {
-    private static final String BASEURL = "api.openweathermap.org/";
+    private static final String BASEURL = "https://api.openweathermap.org/";
     private static String endPoint;
 
     public static String getConnection() {
@@ -32,9 +32,7 @@ public class ConnectionManager {
         try {
             HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
             statusCode = httpResponse.statusCode();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
         return statusCode;
