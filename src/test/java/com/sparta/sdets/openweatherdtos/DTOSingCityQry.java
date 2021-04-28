@@ -1,4 +1,4 @@
 package com.sparta.sdets.openweatherdtos;
 
-public class DTOOne {
+public class DTOSingCityQry {
 }
