@@ -128,5 +128,9 @@ public class DTOMultiLocationCircle {
         return this.weather;
     }
 
+    public boolean checkCoordinatesAreWithinRestraints() {
+        return coord.getLon() >= -180.0000000 && coord.getLon() <= 180.0000000 && coord.getLat() >= -90.0000000 && coord.getLat() <= 90.0000000;
+    }
+
 }
 

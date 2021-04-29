@@ -1,14 +1,12 @@
 package com.sparta.sdets.dtos.circle;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sparta.sdets.queries.MultiLocationQueries;
-import com.sparta.sdets.dtos.square.DTOMultiLocationSquare;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DTOMultiLocationCircleOverview extends MultiLocationQueries {
+public class DTOMultiLocationCircleOverview {
 
     @JsonProperty("message")
     private String message;
@@ -66,6 +64,24 @@ public class DTOMultiLocationCircleOverview extends MultiLocationQueries {
                 ", numOfCitiesInBox=" + numOfCitiesInBox +
                 ", cities=" + cities +
                 '}';
+    }
+
+    public boolean checkLocationsAreUnique(){
+
+        ArrayList<double[]> LocationCompact= new ArrayList<>();
+
+        for(DTOMultiLocationCircle city : this.cities){
+            double[] temp = new double[2];
+
+            temp[0] = city.getCoord().getLat();
+            temp[1] = city.getCoord().getLon();
+
+            LocationCompact.add(temp);
+        }
+
+        Set<double[]> LocationNoDuplicates = new HashSet<>(LocationCompact);
+
+        return LocationNoDuplicates.size() >= LocationCompact.size();
     }
 
 }
