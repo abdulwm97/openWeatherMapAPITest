@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
 
-public class DTOMultCityQryOverview {
+public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverview{
 
     @JsonProperty("cod")
     private String statusCode;
@@ -16,9 +16,9 @@ public class DTOMultCityQryOverview {
     private Integer numOfCitiesInBox;
 
     @JsonProperty("list")
-    private ArrayList<DTOMultCityQry> cities;
+    private ArrayList<DTOMultiLocationQryImpl> cities;
 
-    public DTOMultCityQryOverview(){
+    public DTOMultiLocationQryOverviewImpl(){
 
     }
 
@@ -46,11 +46,11 @@ public class DTOMultCityQryOverview {
         this.numOfCitiesInBox = numOfCitiesInBox;
     }
 
-    public ArrayList<DTOMultCityQry> getCities() {
+    public ArrayList<DTOMultiLocationQryImpl> getCities() {
         return cities;
     }
 
-    public void setCities(ArrayList<DTOMultCityQry> cities) {
+    public void setCities(ArrayList<DTOMultiLocationQryImpl> cities) {
         this.cities = cities;
     }
 
@@ -63,4 +63,11 @@ public class DTOMultCityQryOverview {
                 ", cities=" + cities +
                 '}';
     }
+
+    @Override
+    public boolean checkLocationUniqueness(ArrayList<DTOMultiLocationQryImpl> cities){
+        return true;    //TODO
+    }
+
+
 }

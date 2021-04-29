@@ -6,7 +6,7 @@ import com.sparta.sdets.openweatherdtos.properties.System;
 
 import java.util.List;
 
-public class DTOSingCityQry extends DTOCityQryImpl{
+public class DTOSingleLocationQry extends DTOLocationQryImpl {
 
     @JsonProperty("coord")
     private Coord coord;
@@ -48,10 +48,10 @@ public class DTOSingCityQry extends DTOCityQryImpl{
     private String name;
 
     @JsonProperty("cod")
-    private Integer cod;
+    private Integer statusCode;
 
 
-    public DTOSingCityQry() {
+    public DTOSingleLocationQry() {
 
 
     }
@@ -233,16 +233,16 @@ public class DTOSingCityQry extends DTOCityQryImpl{
     }
 
 
-    public Integer getCod() {
+    public Integer getstatusCode() {
 
-        return cod;
+        return statusCode;
 
     }
 
 
-    public void setCod(Integer cod) {
+    public void setstatusCode(Integer statusCode) {
 
-        this.cod = cod;
+        this.statusCode = statusCode;
 
     }
 

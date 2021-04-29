@@ -5,7 +5,7 @@ import com.sparta.sdets.openweatherdtos.properties.*;
 
 import java.util.List;
 
-public class DTOMultCityQry extends DTOCityQryImpl {
+public class DTOMultiLocationQryImpl extends DTOLocationQryImpl implements DTOMultiLocationQry {
 
     @JsonProperty("id")
     private int id;
@@ -127,4 +127,11 @@ public class DTOMultCityQry extends DTOCityQryImpl {
     public List<Weather> getWeather() {
         return this.weather;
     }
+
+    public boolean checkLocationUniqueness(){
+        return true; //TODO
+    }
+
+
+
 }
