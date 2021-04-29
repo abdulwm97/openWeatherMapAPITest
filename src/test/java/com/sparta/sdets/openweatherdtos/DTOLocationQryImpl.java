@@ -1,5 +1,7 @@
 package com.sparta.sdets.openweatherdtos;
 
+import java.time.Instant;
+
 public class DTOLocationQryImpl implements DTOLocationQry {
 
     //TODO implement these so that they can be utilised by the DTOMultiCityQry and DTOSingCityQry Objects
@@ -37,6 +39,12 @@ public class DTOLocationQryImpl implements DTOLocationQry {
     @Override
     public boolean checkSunriseTimeLessThanSunsetTime(int sunrise, int sunset){
         return sunrise<sunset;
+    }
+
+    @Override
+    public boolean checkDtLessThanCurrentTime(int dateTime) {
+        long currentTimestamp = Instant.now().toEpochMilli();
+        return dateTime < currentTimestamp ;
     }
 
     @Override

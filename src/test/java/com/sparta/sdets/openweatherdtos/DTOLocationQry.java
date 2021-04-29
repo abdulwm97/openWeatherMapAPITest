@@ -10,6 +10,7 @@ public interface DTOLocationQry {
     boolean checkTemperatureWithinRestraints(double temp, double min, double max);
     boolean checkTemperatureMinLessThanMax(double min, double max);
     boolean checkSunriseTimeLessThanSunsetTime(int Sunrise, int Sunset);
+    boolean checkDtLessThanCurrentTime(int dateTime);
     boolean checkSystemInformationValid();
     boolean checkWeatherIsOfValidResponse(Object weather);
 
