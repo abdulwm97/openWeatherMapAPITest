@@ -1,4 +1,4 @@
-package com.sparta.sdets.openweatherdtos.properties;
+package com.sparta.sdets.dtos.properties;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

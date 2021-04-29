@@ -1,7 +1,6 @@
-package com.sparta.sdets.openweatherdtos.properties;
+package com.sparta.sdets.dtos.properties;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,15 +15,13 @@ public class WeatherConditions {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parameters = line.split(",");
-                ArrayList weatherArray = new ArrayList();
+                ArrayList<String> weatherArray = new ArrayList<>();
                 weatherArray.add(parameters[1]);
                 weatherArray.add(parameters[2]);
                 weatherArray.add(parameters[3]);
                 weatherArray.add(parameters[4]);
                 weatherConditions.put(Integer.parseInt(parameters[0]), weatherArray);
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

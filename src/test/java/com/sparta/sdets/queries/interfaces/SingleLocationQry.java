@@ -1,7 +1,7 @@
-package com.sparta.sdets.openweatherdtos;
+package com.sparta.sdets.queries.interfaces;
 
 
-public interface DTOLocationQry {
+public interface SingleLocationQry {
 
     boolean checkCoordinatesWithinRestraints(double lon, double lat);
     boolean checkNullOrEmpty(Object variable);
@@ -10,6 +10,5 @@ public interface DTOLocationQry {
     boolean checkTemperatureMinLessThanMax(double min, double max);
     boolean checkSunriseTimeLessThanSunsetTime(int Sunrise, int Sunset);
     boolean checkDtLessThanCurrentTime(int dateTime);
-    boolean checkSystemInformationValid();
 
 }
