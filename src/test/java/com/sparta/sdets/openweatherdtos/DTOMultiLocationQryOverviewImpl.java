@@ -69,11 +69,11 @@ public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverv
     }
 
     @Override
-    public boolean checkLocationUniqueness(ArrayList<DTOMultiLocationQryImpl> cities){
+    public boolean checkLocationUniqueness(ArrayList<DTOMultiLocationQry> cities){
 
         ArrayList<double[]> LocationCompact= new ArrayList<>();
 
-        for(DTOMultiLocationQryImpl city : cities){
+        for(DTOMultiLocationQry city : cities){
             double[] temp = new double[2];
 
             temp[0] = city.getCoord().getLat();
