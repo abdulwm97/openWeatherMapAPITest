@@ -65,8 +65,4 @@ public class DTOMultiLocationSquareOverview extends MultiLocationQueries {
                 '}';
     }
 
-
-
-
-
 }

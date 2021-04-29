@@ -68,23 +68,4 @@ public class DTOMultiLocationCircleOverview extends MultiLocationQueries {
                 '}';
     }
 
-    @Override
-    public boolean checkLocationUniqueness(ArrayList<DTOMultiLocationSquare> cities){
-
-        ArrayList<double[]> LocationCompact= new ArrayList<>();
-
-        for(DTOMultiLocationSquare city : cities){
-            double[] temp = new double[2];
-
-            temp[0] = city.getCoord().getLat();
-            temp[1] = city.getCoord().getLon();
-
-            LocationCompact.add(temp);
-        }
-
-        Set<double[]> LocationNoDuplicates = new HashSet<>(LocationCompact);
-
-        return LocationNoDuplicates.size() >= LocationCompact.size();
-    }
-
 }
