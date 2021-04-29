@@ -1,6 +1,7 @@
 package com.sparta.sdets.openweatherdtos;
 
 import java.time.Instant;
+import com.sparta.sdets.openweatherdtos.properties.Coord;
 
 public class DTOLocationQryImpl implements DTOLocationQry {
 
@@ -8,32 +9,51 @@ public class DTOLocationQryImpl implements DTOLocationQry {
 
     @Override
     public boolean checkCoordinatesWithinRestraints(double lon, double lat){
-        return true;    //TODO
+        if(lon >= -180.0000000 && lon <= 180.0000000){
+            return true;
+        }
+
+        if (lat >= -90.0000000 && lat <= 90.0000000){
+            return true;
+        }
+        else return false;
+
     }
 
     @Override
     public boolean checkNullOrEmpty(Object variable){
-        return true;    //TODO
+        return variable == "" || variable == null;
     }
 
     @Override
     public boolean checkPercentageWithinRestraints(int percentage){
-        return true;    //TODO
+
+        if(percentage >= 0 && percentage <= 100){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
     public boolean checkPercentageWithinRestraints(double percentage){
-        return true;    //TODO
+        if(percentage >= 0 && percentage <= 100){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
     public boolean checkTemperatureWithinRestraints(double temp, double min, double max){
-        return true;    //TODO
+        return (temp >= min) && (temp <= max);
     }
 
     @Override
     public boolean checkTemperatureMinLessThanMax(double min, double max){
-        return true;    //TODO
+        return min <= max;    //TODO
     }
 
     @Override
