@@ -84,7 +84,7 @@ public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverv
 
         Set<double[]> LocationNoDuplicates = new HashSet<>(LocationCompact);
 
-        if(LocationNoDuplicates.size() < LocationNoDuplicates.size()){
+        if(LocationNoDuplicates.size() < LocationCompact.size()){
             return false;
         }
         else{
