@@ -5,7 +5,7 @@ import com.sparta.sdets.openweatherdtos.properties.*;
 
 import java.util.List;
 
-public class DTOMultCityQry {
+public class DTOMultCityQry extends DTOCityQryImpl {
 
     @JsonProperty("id")
     private int id;
