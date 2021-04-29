@@ -128,4 +128,8 @@ public class DTOMultiLocationSquare {
         return this.weather;
     }
 
+    public boolean checkCoordinatesAreWithinRestraints() {
+        return coordMulti.getLon() >= -180.0000000 && coordMulti.getLon() <= 180.0000000 && coordMulti.getLat() >= -90.0000000 && coordMulti.getLat() <= 90.0000000;
+    }
+
 }

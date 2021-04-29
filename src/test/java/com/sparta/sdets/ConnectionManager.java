@@ -2,11 +2,11 @@ package com.sparta.sdets;
 
 import java.io.IOException;
 import java.net.URI;
+import java.net.http.HttpHeaders;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpClient;
-import java.util.Locale;
-import java.util.Properties;
+import java.util.*;
 
 public class ConnectionManager {
     private static final String BASEURL = "https://api.openweathermap.org/";
@@ -16,7 +16,7 @@ public class ConnectionManager {
 
     public static String getConnection(String connectionType) {
         String inputFile = "src/test/resources/application.properties";
-        Properties properties = new Properties();
+        properties = new Properties();
 
         connectionType = connectionType.toLowerCase(Locale.ROOT);
 
@@ -51,6 +51,20 @@ public class ConnectionManager {
             e.printStackTrace();
         }
         return statusCode;
+    }
+
+    public static Map<String, List<String>> getHeadersInfo() {
+        HttpClient httpClient = HttpClient.newHttpClient();
+        HttpRequest httpRequest = HttpRequest.newBuilder().uri(URI.create(BASEURL + endPoint + properties.getProperty("apiKey"))).build();
+        HttpHeaders headers = null;
+        try {
+            HttpResponse<String> httpResponse = httpClient.send(httpRequest, HttpResponse.BodyHandlers.ofString());
+            headers = httpResponse.headers();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return headers.map();
     }
 }
 

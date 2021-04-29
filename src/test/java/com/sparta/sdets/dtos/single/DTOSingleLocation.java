@@ -3,11 +3,10 @@ package com.sparta.sdets.dtos.single;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.sparta.sdets.dtos.properties.*;
 import com.sparta.sdets.dtos.properties.System;
-import com.sparta.sdets.queries.SingleLocationQueries;
 
 import java.util.List;
 
-public class DTOSingleLocation extends SingleLocationQueries {
+public class DTOSingleLocation {
 
     @JsonProperty("coord")
     private Coord coord;
@@ -164,6 +163,14 @@ public class DTOSingleLocation extends SingleLocationQueries {
 
     public void setStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
+    }
+
+    public boolean checkCoordinatesAreWithinRestraints() {
+        return coord.getLon() >= -180.0000000 && coord.getLon() <= 180.0000000 && coord.getLat() >= -90.0000000 && coord.getLat() <= 90.0000000;
+    }
+
+    public boolean checkSunriseTimeIsLessThanSunsetTime() {
+        return this.getSys().getSunrise() < this.getSys().getSunset();
     }
 
 }
