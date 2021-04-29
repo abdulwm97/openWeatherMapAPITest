@@ -41,7 +41,7 @@ public class DTOLocationQryImpl implements DTOLocationQry {
 
     @Override
     public boolean checkTemperatureMinLessThanMax(double min, double max){
-        return true;    //TODO
+        return min <= max;    //TODO
     }
 
     @Override
