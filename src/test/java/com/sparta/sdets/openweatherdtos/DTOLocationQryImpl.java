@@ -36,12 +36,12 @@ public class DTOLocationQryImpl implements DTOLocationQry {
 
     @Override
     public boolean checkTemperatureWithinRestraints(double temp, double min, double max){
-        return true;    //TODO
+        return (temp >= min) && (temp <= max);
     }
 
     @Override
     public boolean checkTemperatureMinLessThanMax(double min, double max){
-        return true;    //TODO
+        return min <= max;    //TODO
     }
 
     @Override
