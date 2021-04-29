@@ -18,7 +18,7 @@ public class ConnectionManager {
     public static String getConnection() {
         String inputFile = "src/test/resources/application.properties";
 
-        properties = new Properties();
+        Properties properties = new Properties();
         try {
             properties.load(new java.io.FileReader(inputFile));
         } catch (IOException e) {
