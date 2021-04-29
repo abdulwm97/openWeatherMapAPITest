@@ -35,8 +35,8 @@ public class DTOLocationQryImpl implements DTOLocationQry {
     }
 
     @Override
-    public boolean checkSunriseTimeLessThanSunsetTime(int Sunrise, int Sunset){
-        return true;    //TODO
+    public boolean checkSunriseTimeLessThanSunsetTime(int sunrise, int sunset){
+        return sunrise<sunset;
     }
 
     @Override
