@@ -32,4 +32,4 @@ out/
 *.iml
 *.ipr
 *.iws
-/src/test/resources/application.properties
+*.properties
