@@ -1,12 +1,22 @@
 package com.sparta.sdets.openweatherdtos;
 
+import com.sparta.sdets.openweatherdtos.properties.Coord;
+
 public class DTOLocationQryImpl implements DTOLocationQry {
 
     //TODO implement these so that they can be utilised by the DTOMultiCityQry and DTOSingCityQry Objects
 
     @Override
     public boolean checkCoordinatesWithinRestraints(double lon, double lat){
-        return true;    //TODO
+        if(lon >= -180.0000000 && lon <= 180.0000000){
+            return true;
+        }
+
+        if (lat >= -90.0000000 && lat <= 90.0000000){
+            return true;
+        }
+        else return false;
+
     }
 
     @Override
