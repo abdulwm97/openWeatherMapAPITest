@@ -1,5 +1,6 @@
 package com.sparta.sdets.openweatherdtos;
 
+import java.time.Instant;
 import com.sparta.sdets.openweatherdtos.properties.Coord;
 
 public class DTOLocationQryImpl implements DTOLocationQry {
@@ -56,8 +57,14 @@ public class DTOLocationQryImpl implements DTOLocationQry {
     }
 
     @Override
-    public boolean checkSunriseTimeLessThanSunsetTime(int Sunrise, int Sunset){
-        return true;    //TODO
+    public boolean checkSunriseTimeLessThanSunsetTime(int sunrise, int sunset){
+        return sunrise<sunset;
+    }
+
+    @Override
+    public boolean checkDtLessThanCurrentTime(int dateTime) {
+        long currentTimestamp = Instant.now().toEpochMilli();
+        return dateTime < currentTimestamp ;
     }
 
     @Override
