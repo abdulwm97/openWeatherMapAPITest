@@ -6,7 +6,7 @@ import com.sparta.sdets.openweatherdtos.properties.System;
 
 import java.util.List;
 
-public class DTOSingCityQry {
+public class DTOSingCityQry extends DTOCityQryImpl{
 
     @JsonProperty("coord")
     private Coord coord;
