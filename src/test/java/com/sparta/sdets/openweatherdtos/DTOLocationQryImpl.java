@@ -26,12 +26,23 @@ public class DTOLocationQryImpl implements DTOLocationQry {
 
     @Override
     public boolean checkPercentageWithinRestraints(int percentage){
-        return true;    //TODO
+
+        if(percentage >= 0 && percentage <= 100){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override
     public boolean checkPercentageWithinRestraints(double percentage){
-        return true;    //TODO
+        if(percentage >= 0 && percentage <= 100){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     @Override

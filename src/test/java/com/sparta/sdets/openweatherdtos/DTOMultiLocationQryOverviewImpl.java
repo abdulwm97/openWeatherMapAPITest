@@ -20,7 +20,7 @@ public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverv
     private Integer numOfCitiesInBox;
 
     @JsonProperty("list")
-    private ArrayList<DTOMultiLocationQryImpl> cities;
+    private ArrayList<DTOMultiLocationQry> cities;
 
     public DTOMultiLocationQryOverviewImpl(){
 
@@ -50,11 +50,11 @@ public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverv
         this.numOfCitiesInBox = numOfCitiesInBox;
     }
 
-    public ArrayList<DTOMultiLocationQryImpl> getCities() {
+    public ArrayList<DTOMultiLocationQry> getCities() {
         return cities;
     }
 
-    public void setCities(ArrayList<DTOMultiLocationQryImpl> cities) {
+    public void setCities(ArrayList<DTOMultiLocationQry> cities) {
         this.cities = cities;
     }
 
