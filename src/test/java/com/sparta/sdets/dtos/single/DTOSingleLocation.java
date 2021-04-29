@@ -1,12 +1,13 @@
-package com.sparta.sdets.openweatherdtos;
+package com.sparta.sdets.dtos.single;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sparta.sdets.openweatherdtos.properties.*;
-import com.sparta.sdets.openweatherdtos.properties.System;
+import com.sparta.sdets.dtos.properties.*;
+import com.sparta.sdets.dtos.properties.System;
+import com.sparta.sdets.queries.SingleLocationQueries;
 
 import java.util.List;
 
-public class DTOSingleLocationQry extends DTOLocationQryImpl {
+public class DTOSingleLocation extends SingleLocationQueries {
 
     @JsonProperty("coord")
     private Coord coord;
@@ -50,136 +51,79 @@ public class DTOSingleLocationQry extends DTOLocationQryImpl {
     @JsonProperty("cod")
     private Integer statusCode;
 
-
-    public DTOSingleLocationQry() {
-
-
+    public DTOSingleLocation() {
     }
-
 
     public Coord getCoord() {
-
         return coord;
-
     }
-
 
     public void setCoord(Coord coord) {
-
         this.coord = coord;
-
     }
-
 
     public List<Weather> getWeather() {
-
         return weather;
-
     }
-
 
     public void setWeather(List<Weather> weather) {
-
         this.weather = weather;
-
     }
-
 
     public String getBase() {
-
         return base;
-
     }
-
 
     public void setBase(String base) {
-
         this.base = base;
-
     }
-
 
     public Main getMain() {
-
         return main;
-
     }
-
 
     public void setMain(Main main) {
-
         this.main = main;
-
     }
-
 
     public Integer getVisibility() {
-
         return visibility;
-
     }
-
 
     public void setVisibility(Integer visibility) {
-
         this.visibility = visibility;
-
     }
-
 
     public Wind getWind() {
-
         return wind;
-
     }
-
 
     public void setWind(Wind wind) {
-
         this.wind = wind;
-
     }
-
 
     public Clouds getClouds() {
-
         return clouds;
-
     }
-
 
     public void setClouds(Clouds clouds) {
-
         this.clouds = clouds;
-
     }
-
 
     public Integer getDt() {
-
         return dt;
-
     }
-
 
     public void setDt(Integer dt) {
-
         this.dt = dt;
-
     }
-
 
     public System getSys() {
-
         return sys;
-
     }
 
-
     public void setSys(System sys) {
-
         this.sys = sys;
-
     }
 
     public Rain getRain() {
@@ -191,59 +135,35 @@ public class DTOSingleLocationQry extends DTOLocationQryImpl {
     }
 
     public Integer getTimezone() {
-
         return timezone;
-
     }
-
-
 
     public void setTimezone(Integer timezone) {
-
         this.timezone = timezone;
-
     }
-
 
     public Integer getId() {
-
         return id;
-
     }
-
 
     public void setId(Integer id) {
-
         this.id = id;
-
     }
-
 
     public String getName() {
-
         return name;
-
     }
-
 
     public void setName(String name) {
-
         this.name = name;
-
     }
 
-
-    public Integer getstatusCode() {
-
+    public Integer getStatusCode() {
         return statusCode;
-
     }
 
-
-    public void setstatusCode(Integer statusCode) {
-
+    public void setStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
-
     }
 
 }

@@ -1,11 +1,11 @@
-package com.sparta.sdets.openweatherdtos;
+package com.sparta.sdets.dtos.circle;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.sparta.sdets.openweatherdtos.properties.*;
+import com.sparta.sdets.dtos.properties.*;
 
 import java.util.List;
 
-public class DTOMultiLocationQry extends DTOLocationQryImpl {
+public class DTOMultiLocationCircle {
 
     @JsonProperty("id")
     private int id;
@@ -14,7 +14,7 @@ public class DTOMultiLocationQry extends DTOLocationQryImpl {
     private String name;
 
     @JsonProperty("coord")
-    private CoordMulti coordMulti;
+    private Coord coord;
 
     @JsonProperty("main")
     private Main main;
@@ -25,6 +25,9 @@ public class DTOMultiLocationQry extends DTOLocationQryImpl {
     @JsonProperty("wind")
     private Wind wind;
 
+    @JsonProperty("sys")
+    private SystemMulti system;
+
     @JsonProperty("rain")
     private Rain rain;
 
@@ -32,10 +35,7 @@ public class DTOMultiLocationQry extends DTOLocationQryImpl {
     private Snow snow;
 
     @JsonProperty("clouds")
-    private CloudsMulti cloudsMulti;
-
-    @JsonProperty("visibility")
-    private int visibility;
+    private Clouds clouds;
 
     @JsonProperty("weather")
     private List<Weather> weather;
@@ -56,12 +56,12 @@ public class DTOMultiLocationQry extends DTOLocationQryImpl {
         return this.name;
     }
 
-    public void setCoord(CoordMulti coordMulti) {
-        this.coordMulti = coordMulti;
+    public void setCoord(Coord coord) {
+        this.coord = coord;
     }
 
-    public CoordMulti getCoord() {
-        return this.coordMulti;
+    public Coord getCoord() {
+        return this.coord;
     }
 
     public void setMain(Main main) {
@@ -88,6 +88,14 @@ public class DTOMultiLocationQry extends DTOLocationQryImpl {
         return this.wind;
     }
 
+    public SystemMulti getSystem() {
+        return system;
+    }
+
+    public void setSystem(SystemMulti system) {
+        this.system = system;
+    }
+
     public void setRain(Rain rain) {
         this.rain = rain;
     }
@@ -104,20 +112,12 @@ public class DTOMultiLocationQry extends DTOLocationQryImpl {
         this.snow = snow;
     }
 
-    public void setClouds(CloudsMulti cloudsMulti) {
-        this.cloudsMulti = cloudsMulti;
+    public void setClouds(Clouds clouds) {
+        this.clouds = clouds;
     }
 
-    public CloudsMulti getClouds() {
-        return this.cloudsMulti;
-    }
-
-    public int getVisibility() {
-        return visibility;
-    }
-
-    public void setVisibility(int visibility) {
-        this.visibility = visibility;
+    public Clouds getClouds() {
+        return this.clouds;
     }
 
     public void setWeather(List<Weather> weather) {
@@ -128,10 +128,5 @@ public class DTOMultiLocationQry extends DTOLocationQryImpl {
         return this.weather;
     }
 
-    public boolean checkLocationUniqueness(){
-        return true; //TODO
-    }
-
-
-
 }
+

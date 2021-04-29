@@ -1,7 +1,5 @@
 package com.sparta.sdets;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpRequest;
@@ -22,11 +20,16 @@ public class ConnectionManager {
 
         connectionType = connectionType.toLowerCase(Locale.ROOT);
 
-        if(connectionType.equals("single")){
-            endPoint = "data/2.5/weather?q=london&appid=";
-        }
-        else if(connectionType.equals("multiple")){
-            endPoint = "data/2.5/box/city?bbox=12,32,15,37,10&appid=";
+        switch (connectionType) {
+            case "single":
+                endPoint = "data/2.5/weather?q=london&appid=";
+                break;
+            case "multiplesquare":
+                endPoint = "data/2.5/box/city?bbox=12,32,15,37,10&appid=";
+                break;
+            case "multiplecircle":
+                endPoint = "data/2.5/find?lat=55.5&lon=37.5&cnt=10&appid=";
+                break;
         }
 
         try {

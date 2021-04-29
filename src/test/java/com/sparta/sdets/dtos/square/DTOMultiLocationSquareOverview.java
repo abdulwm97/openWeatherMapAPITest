@@ -1,14 +1,11 @@
-package com.sparta.sdets.openweatherdtos;
+package com.sparta.sdets.dtos.square;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.sparta.sdets.queries.MultiLocationQueries;
 
-import javax.xml.stream.Location;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
 
-public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverview{
+public class DTOMultiLocationSquareOverview extends MultiLocationQueries {
 
     @JsonProperty("cod")
     private String statusCode;
@@ -20,9 +17,9 @@ public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverv
     private Integer numOfCitiesInBox;
 
     @JsonProperty("list")
-    private ArrayList<DTOMultiLocationQry> cities;
+    private ArrayList<DTOMultiLocationSquare> cities;
 
-    public DTOMultiLocationQryOverviewImpl(){
+    public DTOMultiLocationSquareOverview(){
 
     }
 
@@ -50,11 +47,11 @@ public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverv
         this.numOfCitiesInBox = numOfCitiesInBox;
     }
 
-    public ArrayList<DTOMultiLocationQry> getCities() {
+    public ArrayList<DTOMultiLocationSquare> getCities() {
         return cities;
     }
 
-    public void setCities(ArrayList<DTOMultiLocationQry> cities) {
+    public void setCities(ArrayList<DTOMultiLocationSquare> cities) {
         this.cities = cities;
     }
 
@@ -68,27 +65,8 @@ public class DTOMultiLocationQryOverviewImpl implements DTOMultiLocationQryOverv
                 '}';
     }
 
-    @Override
-    public boolean checkLocationUniqueness(ArrayList<DTOMultiLocationQry> cities){
 
-        ArrayList<double[]> LocationCompact= new ArrayList<>();
 
-        for(DTOMultiLocationQry city : cities){
-            double[] temp = new double[2];
 
-            temp[0] = city.getCoord().getLat();
-            temp[1] = city.getCoord().getLon();
 
-            LocationCompact.add(temp);
-        }
-
-        Set<double[]> LocationNoDuplicates = new HashSet<>(LocationCompact);
-
-        if(LocationNoDuplicates.size() < LocationCompact.size()){
-            return false;
-        }
-        else{
-            return true;
-        }
-    }
 }
