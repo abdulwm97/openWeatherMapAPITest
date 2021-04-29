@@ -1,7 +1,5 @@
 package com.sparta.sdets;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpRequest;
@@ -12,11 +10,11 @@ import java.util.Properties;
 public class ConnectionManager {
     private static final String BASEURL = "https://api.openweathermap.org/";
     private static String endPoint;
+    static Properties properties;
 
     public static String getConnection() {
         String inputFile = "src/test/resources/application.properties";
-
-        Properties properties = new Properties();
+        properties = new Properties();
         try {
             properties.load(new java.io.FileReader(inputFile));
         } catch (IOException e) {

@@ -11,7 +11,7 @@ public class DTOLocationQryImpl implements DTOLocationQry {
 
     @Override
     public boolean checkNullOrEmpty(Object variable){
-        return true;    //TODO
+        return variable == "" || variable == null;
     }
 
     @Override
