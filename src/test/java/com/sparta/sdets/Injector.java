@@ -1,29 +1,29 @@
 package com.sparta.sdets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sparta.sdets.openweatherdtos.DTOMultCityQryOverview;
-import com.sparta.sdets.openweatherdtos.DTOSingCityQry;
+import com.sparta.sdets.openweatherdtos.DTOMultiLocationQryOverviewImpl;
+import com.sparta.sdets.openweatherdtos.DTOSingleLocationQry;
 
 import java.io.IOException;
 import java.net.URL;
 
 public class Injector {
-    public static DTOMultCityQryOverview injectDTO1(String url) {
-        DTOMultCityQryOverview dtoMultCityQryOverview = new DTOMultCityQryOverview();
+    public static DTOMultiLocationQryOverviewImpl injectDTO1(String url) {
+        DTOMultiLocationQryOverviewImpl dtoMultCityQryOverview = new DTOMultiLocationQryOverviewImpl();
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            dtoMultCityQryOverview = objectMapper.readValue(new URL(url), DTOMultCityQryOverview.class);
+            dtoMultCityQryOverview = objectMapper.readValue(new URL(url), DTOMultiLocationQryOverviewImpl.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return dtoMultCityQryOverview;
     }
 
-    public static DTOSingCityQry injectDTO2(String url) {
-        DTOSingCityQry dtoSingCityQry = new DTOSingCityQry();
+    public static DTOSingleLocationQry injectDTO2(String url) {
+        DTOSingleLocationQry dtoSingCityQry = new DTOSingleLocationQry();
         ObjectMapper objectMapper = new ObjectMapper();
         try {
-            dtoSingCityQry = objectMapper.readValue(new URL(url), DTOSingCityQry.class);
+            dtoSingCityQry = objectMapper.readValue(new URL(url), DTOSingleLocationQry.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
