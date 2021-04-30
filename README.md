@@ -50,4 +50,4 @@ We organised our frameworks around our DTO's and made methods for what we though
 
 ### Review
 
-Once all the work was finished and the framework was ready for inspection we had a meeting to go through all the different aspects to make sure everything was working correctly and the logic behind it was flawless.
+Once all the work was finished and the framework was ready for inspection we had a meeting to go through all the different aspects to make sure everything was working correctly and the logic behind it was flawless. We made a few JUnit tests to show that our framework wasa working as expected.
