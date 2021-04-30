@@ -46,13 +46,8 @@ We analysed the responses for each api request type to see whether they have any
 
 ### Execution
 
-
+We organised our frameworks around our DTO's and made methods for what we thought would be needed. Through assigning each member a user story it helped assure that we were truly covering every aspect needed in our framework. In addition we made objects for the different parameters returned from the weather API so it would be easier to compare and test while making minimal calls to the API and integrate the Json properties.
 
 ### Review
 
-
-Setting up the dtos - One for each of the different api request types
-Setting up the interfaces
-creating the framework 
-Working through user stories
-Integrating Json properties
+Once all the work was finished and the framework was ready for inspection we had a meeting to go through all the different aspects to make sure everything was working correctly and the logic behind it was flawless.
