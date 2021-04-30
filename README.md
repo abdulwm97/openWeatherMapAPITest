@@ -18,7 +18,6 @@ As a group we were tasked with developing a framework for testing the [Open Weat
 [JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 [Maven](https://maven.apache.org/)
 [Intellij](https://www.jetbrains.com/idea/)
-[]:[https://camo.githubusercontent.com/ce8694383818e2c4d35bcaa4550a1c694f5ddc6ac9f0fe7747fee431dc16b3ea/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d496e74656c6c694a253230494445412d6166346462343f7374796c653d666c6174266c6f676f3d696e74656c6c696a25323069646561266c6f676f436f6c6f723d666666]
 [Open WeatherMap API](https://openweathermap.org/api)
 
 # Definition of Done
