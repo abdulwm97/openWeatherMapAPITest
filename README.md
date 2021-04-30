@@ -6,20 +6,22 @@ As a group we were tasked with developing a framework for testing the [Open Weat
 ### Group Members
 
 - Abdul Makba (Scrum Master)
-- Aaron Banjoko
-- Alasdair Malcolm
-- Bradley Williams
-- Joel Fright
-- Manit Shah
-- Patrick Walsh
-- Wahdel Woodhouse
+- [Aaron Banjoko](https://github.com/Xavier2a2)
+- [Alasdair Malcolm](https://github.com/AJMalcolm) 
+- [Bradley Williams](https://github.com/bsrwilliams)
+- [Joel Fright](https://github.com/joelfright)
+- [Manit Shah](https://github.com/Manit97)
+- [Patrick Walsh](https://github.com/pkpatch)
+- [Wahdel Woodhouse](https://github.com/WahdelMW)
 
 # Tools
 JDK 11
 Maven
 Intellij
-Jackson 2
-Git
+[JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+[Maven](https://maven.apache.org/)
+[Intellij](https://www.jetbrains.com/idea/)
+[Open WeatherMap API](https://openweathermap.org/api)
 
 # Definition of Done
 ...
