@@ -12,7 +12,7 @@ As a group we were tasked with developing a framework for testing the [Open Weat
 - [Joel Fright](https://github.com/joelfright)
 - Manit Shah
 - Patrick Walsh
-- Wahdel Woodhouse
+- [Wahdel Woodhouse](https://github.com/WahdelMW)
 
 # Tools
 JDK 11
