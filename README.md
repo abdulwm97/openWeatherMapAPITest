@@ -15,9 +15,9 @@ As a group we were tasked with developing a framework for testing the [Open Weat
 - [Wahdel Woodhouse](https://github.com/WahdelMW)
 
 # Tools
-JDK 11
-Maven
-Intellij
+[JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+[Maven](https://maven.apache.org/)
+[Intellij](https://www.jetbrains.com/idea/)
 Jackson 2
 Git
 
