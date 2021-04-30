@@ -23,5 +23,16 @@ Git
 
 # Definition of Done
 ...
+## Sprint 0
+Planning poker 
+User stories
+Setting up the project (Initializing intellij, Setting dependancies)
+Obtaining the api key
+Assigned roles for the next day
 
 ## Sprint 1
+Setting up the dtos - One for each of the different api request types
+Setting up the interfaces
+creating the framework 
+Working through user stories
+Integrating Json properties
