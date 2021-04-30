@@ -6,9 +6,9 @@ As a group we were tasked with developing a framework for testing the [Open Weat
 ### Group Members
 
 - Abdul Makba (Scrum Master)
-- Aaron Banjoko
+- [Aaron Banjoko](https://github.com/Xavier2a2)
 - [Alasdair Malcolm](https://github.com/AJMalcolm) 
-- Bradley Williams
+- [Bradley Williams](https://github.com/bsrwilliams)
 - [Joel Fright](https://github.com/joelfright)
 - Manit Shah
 - Patrick Walsh
