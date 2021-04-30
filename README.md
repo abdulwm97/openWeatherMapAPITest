@@ -9,7 +9,7 @@ As a group we were tasked with developing a framework for testing the [Open Weat
 - Aaron Banjoko
 - [Alasdair Malcolm](https://github.com/AJMalcolm) 
 - Bradley Williams
-- Joel Fright
+- [Joel Fright](https://github.com/joelfright)
 - Manit Shah
 - Patrick Walsh
 - Wahdel Woodhouse
