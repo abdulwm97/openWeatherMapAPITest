@@ -41,7 +41,7 @@ At the end of the sprint we used planning poker to define how difficult we thoug
 
 ### Planning 
 
-To start the sprint we looked at our user stories and assigned each member a role. We then worked on interfaces to better understand and structure how we would approach making the framework. From looking at the api request tyoes we understood that we would need 3 different DTO's for the project to handle single city locations, recuangular city locations and circle city locations. 
+To start the sprint we looked at our user stories and assigned each member a role. We then worked on interfaces to better understand and structure how we would approach making the framework. From looking at the api request types we understood that we would need 3 different DTO's for the project to handle single city locations, recuangular city locations and circle city locations. 
 We analysed the responses for each api request type to see whether they have any differences in their responses. An example of such differences being having different names for their variables and case sensitivity.
 
 ### Execution
