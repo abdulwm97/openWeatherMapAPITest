@@ -25,6 +25,13 @@ public class ApiTest {
     }
 
     @Test
+    @DisplayName("Test the Weather is Legit")
+    void testTheWeatherIsLegit() {
+        Assertions.assertTrue(weatherMapAPIUtil.checkWeatherConditionIsValid(singleLocation.getWeather().get(0).getMain()));
+    }
+
+
+    @Test
     @DisplayName("Uniqueness")
     void uniqueness() {
         Assertions.assertTrue(multiLocationCircleOverview.checkLocationsAreUnique());
@@ -34,12 +41,6 @@ public class ApiTest {
     @DisplayName("CheckDateTimeIsWorking")
     void checkDateTimeIsWorking() {
         Assertions.assertTrue(weatherMapAPIUtil.checkDateTimeIsLessThanCurrentTime(singleLocation.getDt()));
-    }
-
-    @Test
-    @DisplayName("Headers")
-    void headers() {
-        System.out.println(ConnectionManager.getHeadersInfo());
     }
 
 }

@@ -1,55 +1,55 @@
-200, Thunderstorm, thunderstorm with light rain, 11d, null
-201, Thunderstorm, thunderstorm with rain, 11d, null
-202, Thunderstorm, thunderstorm with heavy rain, 11d, null
-210, Thunderstorm, light thunderstorm, 11d, null
-211, Thunderstorm, thunderstorm, 11d, null
-212, Thunderstorm, heavy thunderstorm, 11d, null
-221, Thunderstorm, ragged thunderstorm, 11d, null
-230, Thunderstorm, thunderstorm with light drizzle, 11d, null
-231, Thunderstorm, thunderstorm with drizzle, 11d, null
-232, Thunderstorm, thunderstorm with heavy drizzle, 11d, null
-300, Drizzle, light intensity drizzle, 09d, null
-301, Drizzle, drizzle, 09d, null
-302, Drizzle, heavy intensity drizzle, 09d, null
-310, Drizzle, light intensity drizzle rain, 09d, null
-311, Drizzle, drizzle rain, 09d,  null
-312, Drizzle, heavy intensity drizzle rain, 09d,  null
-313, Drizzle, shower rain and drizzle, 09d,null
-314, Drizzle, heavy shower rain and drizzle, 09d,null
-321, Drizzle, shower drizzle, 09d,null
-500, Rain, light rain, 10d,null
-501, Rain, moderate rain, 10d,null
-502, Rain, heavy intensity rain, 10d,null
-503, Rain, very heavy rain, 10d,null
-504, Rain, extreme rain, 10d,null
-511, Rain, freezing rain, 13d,null
-520, Rain, light intensity shower rain, 09d,null
-521, Rain, shower rain, 09d,null
-522, Rain, heavy intensity shower rain, 09d,null
-531, Rain, ragged shower rain, 09d,null
-600, Snow, light snow, 13d,null
-601, Snow, Snow, 13d,null
-602, Snow, Heavy snow, 13d,null
-611, Snow, Sleet, 13d,null
-612, Snow, Light shower sleet, 13d,null
-613, Snow, Shower sleet, 13d,null
-615, Snow, Light rain and snow, 13d,null
-616, Snow, Rain and snow, 13d,null
-620, Snow, Light shower snow, 13d,null
-621, Snow, Shower snow, 13d,null
-622, Snow, Heavy shower snow, 13d,null
-701, Mist, mist, 50d,null
-711, Smoke, Smoke, 50d,null
-721, Haze, Haze, 50d,null
-731, Dust, sand/dust whirls, 50d,null
-741, Fog, fog, 50d,null
-751, Sand, sand, 50d,null
-761, Dust, dust, 50d,null
-762, Ash, volcanic ash, 50d,null
-771, Squall, squalls, 50d,null
-781, Tornado, tornado, 50d,null
-800, Clear, clear sky, 01d, 01n,
-801, Clouds, few clouds: 11-25%, 02d, 02n,
-802, Clouds, scattered clouds: 25-50%, 03d, 03n,
-803, Clouds, broken clouds: 51-84%, 04d, 04n,
-804, Clouds, overcast clouds: 85-100%, 04d, 04n,
+200,Thunderstorm,thunderstorm with light rain,11d,null
+201,Thunderstorm,thunderstorm with rain,11d,null
+202,Thunderstorm,thunderstorm with heavy rain,11d,null
+210,Thunderstorm,light thunderstorm,11d,null
+211,Thunderstorm,thunderstorm, 11d,null
+212,Thunderstorm,heavy thunderstorm,11d,null
+221,Thunderstorm,ragged thunderstorm,11d,null
+230,Thunderstorm,thunderstorm with light drizzle,11d,null
+231,Thunderstorm,thunderstorm with drizzle,11d,null
+232,Thunderstorm,thunderstorm with heavy drizzle,11d,null
+300,Drizzle,light intensity drizzle,09d,null
+301,Drizzle,drizzle,09d,null
+302,Drizzle,heavy intensity drizzle,09d,null
+310,Drizzle,light intensity drizzle rain,09d,null
+311,Drizzle,drizzle rain,09d,null
+312,Drizzle,heavy intensity drizzle rain,09d,null
+313,Drizzle,shower rain and drizzle,09d,null
+314,Drizzle,heavy shower rain and drizzle,09d,null
+321,Drizzle,shower drizzle,09d,null
+500,Rain,light rain,10d,null
+501,Rain,moderate rain,10d,null
+502,Rain,heavy intensity rain,10d,null
+503,Rain,very heavy rain,10d,null
+504,Rain,extreme rain,10d,null
+511,Rain,freezing rain,13d,null
+520,Rain,light intensity shower rain,09d,null
+521,Rain,shower rain,09d,null
+522,Rain,heavy intensity shower rain,09d,null
+531,Rain,ragged shower rain,09d,null
+600,Snow,light snow,13d,null
+601,Snow,Snow,13d,null
+602,Snow,Heavy snow,13d,null
+611,Snow,Sleet,13d,null
+612,Snow,Light shower sleet,13d,null
+613,Snow,Shower sleet,13d,null
+615,Snow,Light rain and snow,13d,null
+616,Snow,Rain and snow,13d,null
+620,Snow,Light shower snow,13d,null
+621,Snow,Shower snow,13d,null
+622,Snow,Heavy shower snow,13d,null
+701,Mist,mist,50d,null
+711,Smoke,Smoke,50d,null
+721,Haze,Haze,50d,null
+731,Dust,sand/dust whirls,50d,null
+741,Fog,fog,50d,null
+751,Sand,sand,50d,null
+761,Dust,dust,50d,null
+762,Ash,volcanic ash,50d,null
+771,Squall,squalls,50d,null
+781,Tornado,tornado,50d,null
+800,Clear,clear sky,01d,01n,
+801,Clouds,few clouds: 11-25%,02d,02n,
+802,Clouds,scattered clouds: 25-50%,03d,03n,
+803,Clouds,broken clouds: 51-84%,04d,04n,
+804,Clouds,overcast clouds: 85-100%,04d,04n,
